@@ -5,6 +5,7 @@ namespace Alfianizzah\Larafi\Console;
 use Alfianizzah\Larafi\Models\User;
 use Faker\Factory;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Hash;
 
 class GenerateUserCommand extends Command
 {
@@ -20,7 +21,7 @@ class GenerateUserCommand extends Command
             $attr = [
                 'name' => $faker->name,
                 'email' => $faker->email,
-                "password" => hash("PASSWORD_BCRYPT", "password"),
+                "password" =>      Hash::make("password"),
             ];
             User::create($attr);
         }
