@@ -2,6 +2,8 @@
 
 namespace Alfianizzah\Larafi\Helper;
 
+use App\Models\User;
+
 class StringHelper
 {
     public static function helloWorld()
@@ -14,7 +16,7 @@ class StringHelper
     }
     public static function randomQuote()
     {
-        $jsonData = file_get_contents(__DIR__ . "/../datasets/quotes.json");
+        $jsonData = file_get_contents(__DIR__ . "/../Datasets/quotes.json");
         if ($jsonData === false) {
             echo "Error reading JSON file";
         } else {
@@ -31,5 +33,9 @@ class StringHelper
                 return $data[$randomIndex]["quote"];
             }
         }
+    }
+    public static function getUser()
+    {
+        return  User::get();
     }
 }

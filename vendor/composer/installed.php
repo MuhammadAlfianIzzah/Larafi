@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'alfianizzah/larafi',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '3f058b391748b91c33ef61bf396d1e4f8eb507ba',
         'type' => 'package',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'alfianizzah/larafi' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '3f058b391748b91c33ef61bf396d1e4f8eb507ba',
             'type' => 'package',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -115,6 +115,15 @@
             'reference' => '8782f75e80ab3e6036842d24dbeead34a16f3a79',
             'type' => 'library',
             'install_path' => __DIR__ . '/../illuminate/contracts',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'illuminate/database' => array(
+            'pretty_version' => 'v11.6.0',
+            'version' => '11.6.0.0',
+            'reference' => '3c4cfccee396a4a26b88ea5950314ba149366719',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../illuminate/database',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
