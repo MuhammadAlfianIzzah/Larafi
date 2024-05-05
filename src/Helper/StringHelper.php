@@ -2,7 +2,7 @@
 
 namespace Alfianizzah\Larafi\Helper;
 
-use App\Models\User;
+use Alfianizzah\Larafi\Models\User;
 
 class StringHelper
 {
