@@ -1,6 +1,6 @@
 <?php
 
-namespace JohnDoe\larafi\Console;
+namespace Alfianizzah\Larafi\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;

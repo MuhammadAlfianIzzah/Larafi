@@ -2,8 +2,8 @@
 
 namespace Alfianizzah\Larafi;
 
+use Alfianizzah\Larafi\Console\InstallLarafi;
 use Illuminate\Support\ServiceProvider;
-use JohnDoe\larafi\Console\InstallLarafi;
 
 class LarafiServiceProvider extends ServiceProvider
 {
