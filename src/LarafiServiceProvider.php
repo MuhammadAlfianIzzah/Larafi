@@ -2,6 +2,7 @@
 
 namespace Alfianizzah\Larafi;
 
+use Alfianizzah\Larafi\Console\GenerateUserCommand;
 use Alfianizzah\Larafi\Console\InstallLarafi;
 use Illuminate\Support\ServiceProvider;
 
@@ -18,6 +19,7 @@ class LarafiServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 InstallLarafi::class,
+                GenerateUserCommand::class
             ]);
         }
     }
